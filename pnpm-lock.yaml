@@ -8,9 +8,68 @@ dependencies:
   ramda:
     specifier: ^0.29.1
     version: 0.29.1
+  sanctuary:
+    specifier: ^3.1.0
+    version: 3.1.0
 
 packages:
 
   /ramda@0.29.1:
     resolution: {integrity: sha512-OfxIeWzd4xdUNxlWhgFazxsA/nl3mS4/jGZI5n00uWOoSSFRhC1b6gl6xvmzUamgmqELraWp0J/qqVlXYPDPyA==}
+    dev: false
+
+  /sanctuary-def@0.22.0:
+    resolution: {integrity: sha512-lywS27TfuPHzelMh6M1YWBcB//Lom4Gko/tGjKYbDPkPet1B5KplsSdjY+5sF4mwp6+PDUodsk/Y3Uskrc/ebw==}
+    dependencies:
+      sanctuary-either: 2.1.0
+      sanctuary-show: 2.0.0
+      sanctuary-type-classes: 12.1.0
+      sanctuary-type-identifiers: 3.0.0
+    dev: false
+
+  /sanctuary-either@2.1.0:
+    resolution: {integrity: sha512-AsQCma2yGAVS7Dlxme/09NZWQfcXBNylVmkuvarp8uOe9otSwClOgQyyePN2OxO4hTf3Au1Ck4ggm+97Je06kA==}
+    dependencies:
+      sanctuary-show: 2.0.0
+      sanctuary-type-classes: 12.1.0
+    dev: false
+
+  /sanctuary-maybe@2.1.0:
+    resolution: {integrity: sha512-xCmvaEkYaIz5klWUrsgvgORKTL3bVYxATp7HyGBY0ZCu9tHJtSYDTpwnqMkRknHFIU986Kr2M/dJdiFvuc6UCQ==}
+    dependencies:
+      sanctuary-show: 2.0.0
+      sanctuary-type-classes: 12.1.0
+    dev: false
+
+  /sanctuary-pair@2.1.0:
+    resolution: {integrity: sha512-yY1JzzIJ/Ex7rjN8NmQLB7yv6GVzNeaMvxoYSW8w1ReLQI0n2sGOVCnAVipZuCv7wmfd+BavSXp59rklJeYytw==}
+    dependencies:
+      sanctuary-show: 2.0.0
+      sanctuary-type-classes: 12.1.0
+    dev: false
+
+  /sanctuary-show@2.0.0:
+    resolution: {integrity: sha512-REj4ZiioUXnDLj6EpJ9HcYDIEGaEexmB9Fg5o6InZR9f0x5PfnnC21QeU9SZ9E7G8zXSZPNjy8VRUK4safbesw==}
+    dev: false
+
+  /sanctuary-type-classes@12.1.0:
+    resolution: {integrity: sha512-oWP071Q88dEgJwxHLZp8tc7DoS+mWmYhYOuhP85zznPpIxV1ZjJfyRvcR59YCazyFxyFeBif7bJx1giLhDZW0Q==}
+    dependencies:
+      sanctuary-type-identifiers: 3.0.0
+    dev: false
+
+  /sanctuary-type-identifiers@3.0.0:
+    resolution: {integrity: sha512-YFXYcG0Ura1dSPd/1xLYtE2XAWUEsBHhMTZvYBOvwT8MeFQwdUOCMm2DC+r94z6H93FVq0qxDac8/D7QpJj6Mg==}
+    dev: false
+
+  /sanctuary@3.1.0:
+    resolution: {integrity: sha512-yTpWmslb5Q2jXcHYeIfCzJksIpe3pngBaFBDpjdPXONWyVSB3hBVDZZ8EmitohaMZqjLB+JREeEL0YOVtdxILA==}
+    dependencies:
+      sanctuary-def: 0.22.0
+      sanctuary-either: 2.1.0
+      sanctuary-maybe: 2.1.0
+      sanctuary-pair: 2.1.0
+      sanctuary-show: 2.0.0
+      sanctuary-type-classes: 12.1.0
+      sanctuary-type-identifiers: 3.0.0
     dev: false

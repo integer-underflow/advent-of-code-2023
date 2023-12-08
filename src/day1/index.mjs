@@ -21,11 +21,11 @@ const result = compose(
     sum,
     flatten,
     map(compose(
-        parseInt, 
-        join(''), 
-        map(unless(hasDigitCharacter, convertDigitWordToDigitCharacter)), 
+        parseInt,
+        join(''),
+        map(unless(hasDigitCharacter, convertDigitWordToDigitCharacter)),
         findFirstAndLastDigit
-    )), 
+    )),
     splitLines
 )(INPUT)
 

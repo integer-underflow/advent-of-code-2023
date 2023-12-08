@@ -1,5 +1,4 @@
-export const INPUT = `
-14gxqgqsqqbxfpxnbccjc33eight
+export const INPUT = `14gxqgqsqqbxfpxnbccjc33eight
 eight2sevenkl
 mrjstg5onetwoeightgcczx8vgrgl
 9246
@@ -998,15 +997,12 @@ vqxqnzrpqvtdtmgndhs7eightnqpxcntfmjr
 jone4ccn8
 nftdkmtmcz4
 nlnineeightmndkqz8nineonenrqm
-nrhdxfsqvxcbcghf35eightthreeseven5
-`
+nrhdxfsqvxcbcghf35eightthreeseven5`
 
-export const INPUT2 = `
-two1nine
+export const INPUT2 = `two1nine
 eightwothree
 abcone2threexyz
 xtwone3four
 4nineeightseven2
 zoneight234
-7pqrstsixteen
-`
+7pqrstsixteen`

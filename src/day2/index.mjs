@@ -1,4 +1,4 @@
-import { compose, flatten, map, split, sum, join, unless, curry, lte, reduce, max, tap, head, chain, filter, flip, take, prop } from "ramda"
+import { compose, map, split, sum, curry, lte, reduce, max, tap, head, chain, filter, flip, prop } from "ramda"
 import { INPUT, INPUT_TEST } from "./input.mjs"
 
 const log                  = tap(console.log)
@@ -21,13 +21,11 @@ const isPossible           = ({red, green, blue}) => hasLessThanOrEqual12(red) &
  * What is the sum of the IDs of those games?
 */
 
-
-
 const result = compose(
     log,
     sum,
     map(prop('id')),
-    filter(compose(isPossible, log)),
+    filter(isPossible),
     map(compose(game => ({id: findGameId(game), red: findMostRed(game), green: findMostGreen(game), blue: findMostBlue(game)}))),
     splitLines
 )(INPUT)
